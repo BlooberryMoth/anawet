@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "anawet",
+	"version": "${version}",
+	"name": "A&A's Wonderfully Expansive Technology",
+	"description": "An expansive and dangerously wonderful tech mod by An and Andy Z.",
+	"authors": [
+		"BlooberryMoth"
+	],
+	"contact": {
+		"homepage": "https://thatgalblu.com/code/mcmods/anawet",
+		"sources": "https://github.com/BlooberryMoth/anawet"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/anawet/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.thatgalblu.anawet.ANAWET"
+		],
+		"client": [
+          "com.thatgalblu.anawet.ANAWETClient"
+		],
+		"fabric-datagen": [
+          "com.thatgalblu.anawet.ANAWETDataGenerator"
+		]
+	},
+	"mixins": [
+		"anawet.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
