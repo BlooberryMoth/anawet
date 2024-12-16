@@ -11,7 +11,9 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class ItemsGen {
+    public static final Item COPPER_WRENCH = registerItem("copper_wrench", new Item(new FabricItemSettings()), null);
     public static final Item IRON_WRENCH = registerItem("iron_wrench", new Item(new FabricItemSettings()), null);
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings()), null);
     public static final Item STEEL_WRENCH = registerItem("steel_wrench", new Item(new FabricItemSettings()), null);
 
     private static Item registerItem(String name, Item item, RegistryKey<ItemGroup> group) {

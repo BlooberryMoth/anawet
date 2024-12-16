@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "pattern": [
+    " # ",
+    " ##",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "tag": "c:steel_ingots"
+    }
+  },
+  "result": {
+    "item": "anawet:steel_wrench",
+    "count": 1
+  }
+}

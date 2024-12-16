@@ -1,7 +1,9 @@
 {
-  "itemgroup.anawet": "A&A's Wonderfully Expansive Technology",
+  "itemgroup.anawet": "A&A's Technology",
 
+  "item.anawet.copper_wrench": "Copper Wrench",
   "item.anawet.iron_wrench": "Iron Wrench",
+  "item.anawet.steel_ingot": "Steel Ingot",
   "item.anawet.steel_wrench": "Steel Wrench",
 
   "block.anawet.shelf": "Shelf"

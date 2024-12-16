@@ -9,11 +9,18 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class BlocksGen {
     public static final Block SHELF = registerBlock("shelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+            new Block(FabricBlockSettings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .strength(.5f)
+                    .nonOpaque()));
+
+    public static final Block WALL_SHELF = registerBlock("wall_shelf",
+            new Block(FabricBlockSettings.copyOf(SHELF)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -15,6 +15,8 @@ public class ItemGroupsGen {
             new Identifier(ANAWET.MOD_ID, "anawetitemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.anawet"))
                     .icon(() -> new ItemStack(ItemsGen.STEEL_WRENCH)).entries((displayContext, entries) -> {
+                        entries.add(ItemsGen.STEEL_INGOT);
+                        entries.add(ItemsGen.COPPER_WRENCH);
                         entries.add(ItemsGen.IRON_WRENCH);
                         entries.add(ItemsGen.STEEL_WRENCH);
                         entries.add(BlocksGen.SHELF);
